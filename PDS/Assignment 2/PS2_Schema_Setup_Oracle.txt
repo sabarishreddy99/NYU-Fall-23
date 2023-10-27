@@ -1,0 +1,360 @@
+﻿CREATE TABLE Comedians (
+    comedian_id NUMBER(5) PRIMARY KEY,
+    first_name VARCHAR2(50) NOT NULL,
+    last_name VARCHAR2(50) NOT NULL,
+    bio VARCHAR2(4000),
+    phone VARCHAR2(15) NOT NULL
+);
+
+
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (1, 'John', 'Doe', 'A hilarious comedian with a unique style.', '123-456-7890');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (2, 'Jane', 'Smith', 'Known for her witty and observational humor.', '987-654-3210');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (3, 'Mike', 'Johnson', 'Bringing laughter to audiences for over a decade.', '555-111-2222');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (4, 'Emily', 'Williams', 'Master of one-liners and quick wit.', '777-888-9999');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (5, 'Tom', 'Brown', 'Known for his energetic and physical comedy.', '444-333-2222');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (6, 'Sara', 'Clark', 'Bringing a fresh perspective to comedy.', '666-555-4444');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (7, 'Chris', 'Miller', 'A rising star with a unique comedic voice.', '111-222-3333');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (8, 'Amy', 'Taylor', 'Making audiences laugh with relatable humor.', '999-888-7777');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (9, 'Mark', 'Jones', 'A comedic genius with a flair for improvisation.', '555-444-3333');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (10, 'Laura', 'Davis', 'Known for her clever and thought-provoking humor.', '111-222-3333');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (11, 'Paul', 'White', 'Bringing a mix of stand-up and storytelling.', '444-555-6666');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (12, 'Megan', 'Harris', 'Entertaining crowds with her sharp and sassy humor.', '777-888-9999');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (13, 'Tim', 'Robinson', 'A master of observational comedy.', '555-333-2222');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (14, 'Rachel', 'Anderson', 'Keeping audiences in stitches with her comedic timing.', '222-111-3333');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (15, 'Kevin', 'Lee', 'Bringing laughter with his diverse and relatable comedy.', '777-555-4444');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (16, 'Lauren', 'Cooper', 'Known for her clever and witty stand-up routines.', '888-999-1111');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (17, 'Josh', 'Baker', 'A rising comedy star with a unique perspective.', '666-333-2222');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (18, 'Natalie', 'Fisher', 'Making audiences laugh with her charming and humorous stories.', '555-444-6666');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (19, 'Alex', 'Scott', 'Master of self-deprecating humor and clever wordplay.', '777-666-5555');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (20, 'Jordan', 'Miller', 'Bringing laughter with his offbeat and hilarious comedy.', '444-111-3333');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (21, 'Sam', 'Turner', 'Known for his deadpan delivery and dry wit.', '555-666-7777');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (22, 'Hannah', 'Evans', 'A stand-up comedian with a knack for relatable humor.', '111-999-3333');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (23, 'Jack', 'Young', 'Bringing humor with his unique blend of satire and sarcasm.', '555-333-4444');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (24, 'Emma', 'King', 'Entertaining audiences with her light-hearted and funny anecdotes.', '777-888-1111');
+INSERT INTO Comedians (comedian_id, first_name, last_name, bio, phone) VALUES (25, 'Tyler', 'Hall', 'A comedian who brings laughter with his hilarious storytelling.', '444-555-6666');
+
+
+SELECT * FROM Comedians;
+
+
+
+
+CREATE TABLE Venues (
+    venue_id NUMBER(5) PRIMARY KEY,
+    name VARCHAR2(100) NOT NULL,
+    address VARCHAR2(100) NOT NULL,
+    contact_info VARCHAR2(15) NOT NULL,
+    capacity NUMBER(5) NOT NULL
+);
+
+
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (1, 'The Comedy Cellar', '123 Main St, Cityville', '555-1234', 200);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (2, 'Laugh Lounge', '456 Oak St, Townsville', '555-5678', 200);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (3, 'Chuckling Theater', '789 Pine St, Villagetown', '555-9876', 300);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (4, 'Giggle Haven', '101 Maple St, Humor City', '555-4321', 1000);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (5, 'Funny Spot', '202 Cedar St, Joketown', '555-8765', 800);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (6, 'Haha Hall', '303 Birch St, Jestville', '555-1111', 220);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (7, 'Comedy Junction', '404 Elm St, Guffawtown', '555-2222', 170);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (8, 'Chuckle Center', '505 Oak St, Lightheartedville', '555-3333', 190);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (9, 'Whoopee Theater', '606 Pine St, Chuckleville', '555-4444', 210);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (10, 'Giggle Galaxy', '707 Maple St, Jestertown', '555-5555', 260);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (11, 'Comedy Cove', '808 Cedar St, Laughtertown', '555-6666', 230);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (12, 'Snicker Stadium', '909 Birch St, Chuckletown', '555-7777', 280);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (13, 'Grin Gardens', '1010 Elm St, Humortown', '555-8888', 240);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (14, 'Funny Field', '1111 Oak St, Jesterville', '555-9999', 200);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (15, 'Humor Hall', '1212 Pine St, Chuckle City', '555-0000', 300);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (16, 'Lol Lodge', '1313 Maple St, Laughterland', '555-1122', 170);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (17, 'Joke Junction', '1414 Cedar St, Giggletown', '555-2233', 220);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (18, 'Amusement Auditorium', '1515 Birch St, Jestertown', '555-3344', 250);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (19, 'Chuckling Coliseum', '1616 Elm St, HaHa City', '555-4455', 180);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (20, 'Comedy Castle', '1717 Oak St, Jokeland', '555-5566', 200);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (21, 'Giggle Grotto', '1818 Pine St, Humorville', '555-6677', 210);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (22, 'Snicker Sanctuary', '1919 Maple St, Chuckleville', '555-7788', 240);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (23, 'Witty Warehouse', '2020 Cedar St, Laughterland', '555-8899', 260);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (24, 'Jest Junction', '2121 Birch St, Guffawville', '555-9900', 720);
+INSERT INTO Venues (venue_id, name, address, contact_info, capacity) VALUES (25, 'Whoopee World', '2222 Elm St, Joketown', '555-0011', 600);
+
+
+SELECT * FROM Venues;
+
+
+CREATE TABLE Events (
+    event_id NUMBER(5) PRIMARY KEY,
+    venue_id NUMBER(5) NOT NULL,
+    event_date DATE NOT NULL,
+    start_time TIMESTAMP NOT NULL,
+    end_time TIMESTAMP NOT NULL,
+    FOREIGN KEY (venue_id) REFERENCES Venues(venue_id)
+);
+
+
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (1, 1, TO_DATE('2023-10-15', 'YYYY-MM-DD'), TO_TIMESTAMP('20:00:00', 'HH24:MI:SS'), TO_TIMESTAMP('22:00:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (2, 2, TO_DATE('2023-10-20', 'YYYY-MM-DD'), TO_TIMESTAMP('19:30:00', 'HH24:MI:SS'), TO_TIMESTAMP('21:30:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (3, 3, TO_DATE('2023-10-25', 'YYYY-MM-DD'), TO_TIMESTAMP('21:00:00', 'HH24:MI:SS'), TO_TIMESTAMP('23:00:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (4, 4, TO_DATE('2023-11-05', 'YYYY-MM-DD'), TO_TIMESTAMP('18:30:00', 'HH24:MI:SS'), TO_TIMESTAMP('20:30:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (5, 5, TO_DATE('2023-11-10', 'YYYY-MM-DD'), TO_TIMESTAMP('20:00:00', 'HH24:MI:SS'), TO_TIMESTAMP('22:00:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (6, 1, TO_DATE('2023-11-15', 'YYYY-MM-DD'), TO_TIMESTAMP('19:00:00', 'HH24:MI:SS'), TO_TIMESTAMP('21:00:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (7, 2, TO_DATE('2023-11-20', 'YYYY-MM-DD'), TO_TIMESTAMP('20:30:00', 'HH24:MI:SS'), TO_TIMESTAMP('22:30:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (8, 3, TO_DATE('2023-11-25', 'YYYY-MM-DD'), TO_TIMESTAMP('18:00:00', 'HH24:MI:SS'), TO_TIMESTAMP('20:00:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (9, 4, TO_DATE('2023-12-05', 'YYYY-MM-DD'), TO_TIMESTAMP('19:30:00', 'HH24:MI:SS'), TO_TIMESTAMP('21:30:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (10, 5, TO_DATE('2023-12-10', 'YYYY-MM-DD'), TO_TIMESTAMP('21:00:00', 'HH24:MI:SS'), TO_TIMESTAMP('23:00:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (11, 1, TO_DATE('2023-12-15', 'YYYY-MM-DD'), TO_TIMESTAMP('20:00:00', 'HH24:MI:SS'), TO_TIMESTAMP('22:00:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (12, 2, TO_DATE('2023-12-20', 'YYYY-MM-DD'), TO_TIMESTAMP('19:30:00', 'HH24:MI:SS'), TO_TIMESTAMP('21:30:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (13, 3, TO_DATE('2023-12-25', 'YYYY-MM-DD'), TO_TIMESTAMP('21:00:00', 'HH24:MI:SS'), TO_TIMESTAMP('23:00:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (14, 4, TO_DATE('2024-01-05', 'YYYY-MM-DD'), TO_TIMESTAMP('18:30:00', 'HH24:MI:SS'), TO_TIMESTAMP('20:30:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (15, 5, TO_DATE('2024-01-10', 'YYYY-MM-DD'), TO_TIMESTAMP('20:00:00', 'HH24:MI:SS'), TO_TIMESTAMP('22:00:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (16, 1, TO_DATE('2024-01-15', 'YYYY-MM-DD'), TO_TIMESTAMP('19:00:00', 'HH24:MI:SS'), TO_TIMESTAMP('21:00:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (17, 2, TO_DATE('2024-01-20', 'YYYY-MM-DD'), TO_TIMESTAMP('20:30:00', 'HH24:MI:SS'), TO_TIMESTAMP('22:30:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (18, 3, TO_DATE('2024-01-25', 'YYYY-MM-DD'), TO_TIMESTAMP('18:00:00', 'HH24:MI:SS'), TO_TIMESTAMP('20:00:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (19, 4, TO_DATE('2024-02-05', 'YYYY-MM-DD'), TO_TIMESTAMP('19:30:00', 'HH24:MI:SS'), TO_TIMESTAMP('21:30:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (20, 5, TO_DATE('2024-02-10', 'YYYY-MM-DD'), TO_TIMESTAMP('21:00:00', 'HH24:MI:SS'), TO_TIMESTAMP('23:00:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (21, 1, TO_DATE('2024-02-15', 'YYYY-MM-DD'), TO_TIMESTAMP('20:00:00', 'HH24:MI:SS'), TO_TIMESTAMP('22:00:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (22, 2, TO_DATE('2024-02-20', 'YYYY-MM-DD'), TO_TIMESTAMP('19:30:00', 'HH24:MI:SS'), TO_TIMESTAMP('21:30:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (23, 3, TO_DATE('2024-02-25', 'YYYY-MM-DD'), TO_TIMESTAMP('21:00:00', 'HH24:MI:SS'), TO_TIMESTAMP('23:00:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (24, 4, TO_DATE('2024-03-05', 'YYYY-MM-DD'), TO_TIMESTAMP('18:30:00', 'HH24:MI:SS'), TO_TIMESTAMP('20:30:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (25, 5, TO_DATE('2024-03-10', 'YYYY-MM-DD'), TO_TIMESTAMP('20:00:00', 'HH24:MI:SS'), TO_TIMESTAMP('22:00:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (26, 25, TO_DATE('2019-12-15', 'YYYY-MM-DD'), TO_TIMESTAMP('20:00:00', 'HH24:MI:SS'), TO_TIMESTAMP('22:00:00', 'HH24:MI:SS'));
+INSERT INTO Events (event_id, venue_id, event_date, start_time, end_time) VALUES (27, 24, TO_DATE('2023-09-15', 'YYYY-MM-DD'), TO_TIMESTAMP('20:00:00', 'HH24:MI:SS'), TO_TIMESTAMP('22:00:00', 'HH24:MI:SS'));
+
+
+SELECT * FROM Events;
+
+
+CREATE TABLE Events_Comedians (
+    event_id NUMBER(5) ,
+    comedian_id NUMBER(5) ,
+    PRIMARY KEY (event_id, comedian_id),
+    FOREIGN KEY (event_id) REFERENCES Events(event_id),
+    FOREIGN KEY (comedian_id) REFERENCES Comedians(comedian_id)
+);
+
+
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (1, 1);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (1, 2);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (2, 2);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (2, 3);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (3, 4);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (4, 5);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (4, 6);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (5, 7);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (5, 8);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (6, 9);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (7, 10);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (7, 11);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (8, 12);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (8, 13);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (9, 14);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (10, 15);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (10, 16);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (11, 17);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (11, 18);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (12, 19);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (13, 20);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (13, 21);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (14, 22);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (14, 23);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (15, 24);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (16, 25);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (16, 1);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (17, 2);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (17, 3);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (18, 4);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (19, 5);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (19, 6);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (20, 7);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (20, 8);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (21, 9);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (22, 10);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (22, 11);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (23, 12);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (23, 13);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (24, 14);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (25, 15);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (25, 16);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (2, 1);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (4, 1);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (6, 1);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (8, 1);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (7, 1);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (26, 20);
+INSERT INTO Events_Comedians (event_id, comedian_id) VALUES (27, 21);
+
+
+
+
+SELECT * FROM Events_Comedians;
+
+
+CREATE TABLE Tickets (
+    ticket_id NUMBER(5) PRIMARY KEY,
+    event_id NUMBER(5) NOT NULL,
+    ticket_type VARCHAR2(50) NOT NULL,
+    price NUMBER(8, 2) NOT NULL,
+    num_tickets NUMBER(5) NOT NULL,
+    FOREIGN KEY (event_id) REFERENCES Events(event_id)
+);
+
+
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (1, 1, 'VIP', 50.00, 50);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (2, 1, 'General Admission', 25.00, 150);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (3, 2, 'VIP', 55.00, 30);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (4, 2, 'General Admission', 30.00, 120);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (5, 3, 'Premium', 40.00, 50);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (6, 3, 'General Admission', 20.00, 150);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (7, 4, 'VIP', 60.00, 40);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (8, 4, 'General Admission', 35.00, 100);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (9, 5, 'Premium', 45.00, 60);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (10, 5, 'General Admission', 25.00, 140);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (11, 6, 'VIP', 50.00, 50);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (12, 6, 'General Admission', 30.00, 120);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (13, 7, 'Premium', 40.00, 50);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (14, 7, 'General Admission', 20.00, 150);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (15, 8, 'VIP', 55.00, 30);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (16, 8, 'General Admission', 35.00, 100);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (17, 9, 'Premium', 45.00, 60);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (18, 9, 'General Admission', 25.00, 140);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (19, 10, 'VIP', 50.00, 50);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (20, 10, 'General Admission', 30.00, 120);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (21, 11, 'Premium', 40.00, 50);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (22, 11, 'General Admission', 20.00, 150);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (23, 12, 'VIP', 55.00, 30);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (24, 12, 'General Admission', 35.00, 100);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (25, 13, 'Premium', 45.00, 60);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (26, 26, 'General Admission', 25.00, 60);
+INSERT INTO Tickets (ticket_id, event_id, ticket_type, price, num_tickets) VALUES (27, 27, 'General Admission', 15.00, 250);
+
+
+SELECT * FROM Tickets;
+
+
+CREATE TABLE Customers (
+    customer_id NUMBER(5) PRIMARY KEY,
+    first_name VARCHAR2(50) NOT NULL,
+    last_name VARCHAR2(50) NOT NULL,
+    email VARCHAR2(100),
+    phone_number VARCHAR2(15)
+);
+
+
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (1, 'Alice', 'Johnson', 'alice@example.com', '555-1111');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (2, 'Bob', 'Williams', 'bob@example.com', '555-2222');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (3, 'Charlie', 'Davis', 'charlie@example.com', '555-3333');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (4, 'David', 'Miller', 'david@example.com', '555-4444');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (5, 'Emily', 'Smith', 'emily@example.com', '555-5555');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (6, 'Frank', 'Brown', 'frank@example.com', '555-6666');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (7, 'Grace', 'Lee', 'grace@example.com', '555-7777');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (8, 'Henry', 'Wilson', 'henry@example.com', '555-8888');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (9, 'Ivy', 'Turner', 'ivy@example.com', '555-9999');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (10, 'Jack', 'Harris', 'jack@example.com', '555-0000');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (11, 'Karen', 'Evans', 'karen@example.com', '555-1122');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (12, 'Liam', 'Johnson', 'liam@example.com', '555-2233');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (13, 'Mia', 'Robinson', 'mia@example.com', '555-3344');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (14, 'Noah', 'Smith', 'noah@example.com', '555-4455');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (15, 'Olivia', 'Davis', 'olivia@example.com', '555-5566');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (16, 'Peter', 'Miller', 'peter@example.com', '555-6677');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (17, 'Quinn', 'Brown', 'quinn@example.com', '555-7788');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (18, 'Ruby', 'Taylor', 'ruby@example.com', '555-8899');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (19, 'Samuel', 'Jones', 'samuel@example.com', '555-9900');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (20, 'Sophia', 'Williams', 'sophia@example.com', '555-0011');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (21, 'Thomas', 'Evans', 'thomas@example.com', '555-1122');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (22, 'Uma', 'Clark', 'uma@example.com', '555-2233');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (23, 'Victor', 'Turner', 'victor@example.com', '555-3344');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (24, 'Willa', 'Cooper', 'willa@example.com', '555-4455');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (25, 'Xander', 'Wilson', 'xander@example.com', '555-5566');
+INSERT INTO Customers (customer_id, first_name, last_name, email, phone_number) VALUES (26, 'John', 'Doe', 'john.doe@example.com', '555-1234');
+
+
+SELECT * FROM Customers;
+
+
+CREATE TABLE Reservations (
+    res_id NUMBER(5) PRIMARY KEY,
+    customer_id NUMBER(5) NOT NULL,
+    ticket_id NUMBER(5) NOT NULL,
+    res_date DATE NOT NULL,
+    tickets_count NUMBER(5) NOT NULL,
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
+    FOREIGN KEY (ticket_id) REFERENCES Tickets(ticket_id)
+);
+
+
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (1, 1, 1, TO_DATE('2023-10-12', 'YYYY-MM-DD'), 2);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (2, 1, 2, TO_DATE('2023-10-14', 'YYYY-MM-DD'), 3);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (3, 2, 3, TO_DATE('2023-10-16', 'YYYY-MM-DD'), 1);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (4, 2, 4, TO_DATE('2023-10-18', 'YYYY-MM-DD'), 4);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (5, 3, 5, TO_DATE('2023-10-20', 'YYYY-MM-DD'), 2);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (6, 3, 6, TO_DATE('2023-10-22', 'YYYY-MM-DD'), 1);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (7, 4, 7, TO_DATE('2023-10-24', 'YYYY-MM-DD'), 3);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (8, 4, 8, TO_DATE('2023-10-26', 'YYYY-MM-DD'), 2);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (9, 5, 9, TO_DATE('2023-10-28', 'YYYY-MM-DD'), 4);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (10, 5, 10, TO_DATE('2023-10-30', 'YYYY-MM-DD'), 1);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (11, 6, 11, TO_DATE('2023-11-01', 'YYYY-MM-DD'), 2);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (12, 6, 12, TO_DATE('2023-11-03', 'YYYY-MM-DD'), 3);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (13, 7, 13, TO_DATE('2023-11-05', 'YYYY-MM-DD'), 1);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (14, 7, 14, TO_DATE('2023-11-07', 'YYYY-MM-DD'), 4);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (15, 8, 15, TO_DATE('2023-11-09', 'YYYY-MM-DD'), 2);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (16, 8, 16, TO_DATE('2023-11-11', 'YYYY-MM-DD'), 1);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (17, 9, 17, TO_DATE('2023-11-13', 'YYYY-MM-DD'), 3);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (18, 9, 18, TO_DATE('2023-11-15', 'YYYY-MM-DD'), 2);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (19, 10, 19, TO_DATE('2023-11-17', 'YYYY-MM-DD'), 4);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (20, 10, 20, TO_DATE('2023-11-19', 'YYYY-MM-DD'), 1);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (21, 11, 21, TO_DATE('2023-11-21', 'YYYY-MM-DD'), 2);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (22, 11, 22, TO_DATE('2023-11-23', 'YYYY-MM-DD'), 3);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (23, 12, 23, TO_DATE('2023-11-25', 'YYYY-MM-DD'), 1);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (24, 12, 24, TO_DATE('2023-11-27', 'YYYY-MM-DD'), 4);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (25, 13, 25, TO_DATE('2023-11-29', 'YYYY-MM-DD'), 2);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (26, 1, 3, TO_DATE('2023-11-29', 'YYYY-MM-DD'), 2);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (27, 1, 7, TO_DATE('2023-11-29', 'YYYY-MM-DD'), 2);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (28, 1, 11, TO_DATE('2023-11-29', 'YYYY-MM-DD'), 2);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (29, 1, 13, TO_DATE('2023-11-29', 'YYYY-MM-DD'), 2);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (30, 1, 15, TO_DATE('2023-11-29', 'YYYY-MM-DD'), 2);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (31, 26, 26, TO_DATE('2019-11-29', 'YYYY-MM-DD'), 2);
+INSERT INTO Reservations (res_id, customer_id, ticket_id, res_date, tickets_count) VALUES (32, 20, 27, TO_DATE('2023-08-29', 'YYYY-MM-DD'), 202);
+
+
+SELECT * FROM Reservations;
+
+
+CREATE TABLE Reviews (
+    review_id NUMBER(5) PRIMARY KEY,
+    event_id NUMBER(5) NOT NULL,
+    customer_id NUMBER(5) NOT NULL,
+    rating NUMBER(2) NOT NULL,
+    review_text VARCHAR2(4000),
+    FOREIGN KEY (event_id) REFERENCES Events(event_id),
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
+);
+
+
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (1, 1, 1, 8, 'Great show! Enjoyed every moment.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (2, 2, 1, 9, 'Fantastic performance by all comedians.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (3, 3, 2, 7, 'Venue was nice, but some jokes fell flat.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (4, 4, 2, 10, 'Hilarious!');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (5, 5, 3, 8, 'Good mix of comedy styles.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (6, 6, 3, 6, 'Expected more laughs, but still enjoyable.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (7, 7, 4, 9, 'Laughed so hard, my stomach hurt!');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (8, 8, 4, 8, 'Solid lineup and great atmosphere.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (9, 9, 5, 7, 'Some comedians were hit or miss.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (10, 10, 5, 9, 'Fantastic night of comedy.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (11, 11, 6, 8, 'Enjoyed the variety in the show.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (12, 12, 6, 10, 'Best comedy show');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (13, 13, 7, 6, 'Not my taste in comedy, but others seemed to enjoy it.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (14, 14, 7, 9, 'Great jokes, great atmosphere.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (15, 15, 8, 8, 'Entertaining from start to finish.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (16, 16, 8, 7, 'Expected more from the headliner.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (17, 17, 9, 9, 'Fantastic show! Will definitely attend again.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (18, 18, 9, 8, 'Good laughs, but some jokes were predictable.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (19, 19, 10, 10, 'Absolutely brilliant! Loved every minute.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (20, 20, 10, 8, 'Solid comedy night.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (21, 21, 11, 7, 'Not as funny as expected.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (22, 22, 11, 9, 'Thoroughly enjoyed the show.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (23, 23, 12, 8, 'Good laughs, but venue could improve.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (24, 24, 12, 10, 'Incredible night of comedy!');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (25, 25, 13, 8, 'Funny and entertaining. Would recommend.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (26, 4, 1, 2, 'Boo!');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (27, 6, 1, 1, 'Boring');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (28, 7, 1, 9, 'Great show!');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (29, 8, 1, 10, 'Enjoyed every moment.');
+INSERT INTO Reviews (review_id, event_id, customer_id, rating, review_text) VALUES (30, 26, 26, 10, 'Good.');
+    
+SELECT * FROM Reviews;
